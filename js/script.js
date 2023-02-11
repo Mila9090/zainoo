@@ -43,9 +43,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function minus() {
         if (offset == 0) {
-            offset = +width.replace(/\D/g, '') * (slides.length - 1);
+            offset = +width.slice(0, -2) * (slides.length - 1);
         } else {
-            offset -=  +width.replace(/\D/g, '');
+            offset -=  +width.slice(0, -2);
         }
         slidesField.style.transform = `translateX(-${offset}px)`;
         
