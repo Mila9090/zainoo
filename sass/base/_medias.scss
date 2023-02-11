@@ -1,0 +1,150 @@
+@media (max-width: 1040px) {
+    .aside {
+        border-right: 1px solid rgba(0, 0, 0, .4);
+        box-shadow: 15px 3px 37px -24px #63635e;
+    }
+    .wrapper {
+        &-line {
+            display: none;
+        }
+    }
+    .number {
+        display: none;
+    }
+    .main{
+        margin-top: 60px;
+        &__left {
+            display: flex;
+            justify-content: center;
+        }
+        &__slider {
+            right: none;
+            width: 500px;
+        }
+    }
+}
+@media (max-width: 820px) {
+    .main{
+        &__slider {
+            width: 350px;
+        }
+        &__slide {
+            background-position: 100% bottom;
+        }
+        &__num {
+            left: 40%;
+        }
+        &__grid {
+            display: none;
+        }
+        &__about {
+            width: auto;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 648px) {
+    .main{
+        &__num {
+            left: 50vw;
+            width: 45px;
+            bottom: 10px;
+        }
+        &__grid {
+            display: none;
+           
+        }
+        &__about {
+            width: 98vw;
+            text-align: center;
+            margin-left: 0;
+        }
+        &__left {
+            width: 98vw;
+        }
+        &__buttons {
+            justify-content: center;
+        }
+        &__slider {
+            width: 80vw;
+        }
+        &__slide {
+            background-size: 315px;
+        }
+    }
+    .burger {
+        display: block;
+        &__open {
+            display: block;
+        }
+    }
+    
+    .aside {
+        display: none;
+        position: absolute;
+        width: 240px;
+        background-color: #fff;
+        padding-bottom: 0;
+        padding-left: 20px;
+        z-index: 4;
+        &__scroll, &__learn {
+            display: none;
+        }
+    }
+    .wrapper {
+        width: 98vw;
+        &-main {
+            padding-bottom: 0;
+        }
+    }
+    .main__slide {
+    background-position: 50% 80%;
+    background-size: 350px;
+}
+    
+
+    .modal {
+        &__frame {
+            width: 100%;
+            height: 40vh;
+        }
+    }
+
+    .header {
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 436px) {
+    .main{
+        &__title {
+            font-size: 40px;
+        }
+        &__button {
+            width: 129px;
+            height: 48px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        &__slide {
+            background-size: contain;
+        }
+        &__slider {
+            width: 64vw;
+        }
+        &__num {
+            left: 30vw
+        }
+        
+        
+    }
+    
+    .aside {
+        display: none;
+    }
+
+    
+}

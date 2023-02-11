@@ -1,0 +1,36 @@
+.wrapper {
+    position: relative;
+    width: calc(98vw - 220px);
+    height: 98vh;
+    &-line {
+        height: 100vh;
+        position: absolute;
+        display: grid;
+        grid-template-columns: 228px 288px 264px 0px;
+        z-index: 1;
+        &__item {
+            width: 1px;
+            height: 100%;
+            background-color: #E9E9E9;
+        }
+    }
+    &-main{
+        width: 98%;
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-rows: 5vh 95vh;
+        align-content: space-around;
+    }
+}
+.number {
+    position: absolute;
+    top: -50px;
+    left: 45%;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 430px;
+    line-height: 587px;
+    color: #ECCA7B;
+    opacity: 0.2;
+}

@@ -1,0 +1,26 @@
+.burger {
+    display: none;
+    position: absolute;
+    &__open{
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 40px;
+        z-index: 3;
+        img {
+            width: 100%;
+        }
+    }
+    &__close{
+        position: absolute;
+        display: none;
+        top: 16px;
+        left: 189px;
+        width: 25px;
+        z-index: 5;
+        img {
+            width: 100%;
+        }
+    }
+}

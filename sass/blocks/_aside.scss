@@ -1,0 +1,115 @@
+.aside {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__logo {
+        flex-grow: 1;
+    }
+    &__list {
+        flex-grow: 2;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__link {
+        position: relative;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: #3A3A3A;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            transition: 0.5s width;
+        }
+        &:hover{
+            text-decoration: none;
+            color: #3A3A3A;
+        }
+        &:hover:after {
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px;
+            background-color: #000;
+            transition: 0.5s width;
+        }
+    }
+    &__new {
+        display: inline-block;
+        width: 41px;
+        line-height: 24px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 40px;
+        color: #FFFFFF;
+        span {
+            display: inline-block;
+            transform: translateY(-1px);
+        }
+    }
+    &__item {
+        flex-grow: 1;
+        display: grid;
+        align-content: end;
+        font-weight: 300;
+        font-size: 44px;
+        div{
+            line-height: 99%;
+            &:nth-child(2){
+                margin-bottom: 38px;
+            }
+        }
+    }
+    &__black{
+        display: inline-block;
+        width: 100px;
+        font-weight: 400;
+        background-color: #000;
+        color: #fff;
+    }
+    &__learn {
+        width: 196px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 23px;
+        &:before{
+            content: '';
+            display: block;
+            width: 48px;
+            height: 1px;
+            transform: translateY(10px);
+            background-color: #000;
+        }
+        span{
+            display: block;
+        }
+        cursor: pointer;
+        
+    }
+    &__scroll{
+        flex-grow: 1;
+        display: grid;
+        align-content: end;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,36 @@
+@import './libs/bootstrap-reboot.min';
+@import './libs/_fonts.scss';
+@import './base/animations';
+
+@import './blocks/aside';
+@import './blocks/wrapper';
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/modal';
+@import './blocks/burger';
+
+@import './base/medias';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia', sans-serif;
+}
+
+.container {
+    width: 98vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
